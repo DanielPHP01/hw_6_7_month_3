@@ -19,12 +19,13 @@ class FragmentContainerActivity : AppCompatActivity() {
     private fun getIntentData() {
         val car = intent.getParcelableExtra<Car>("car")
 
-        var bundle = Bundle()
+        val bundle = Bundle()
         bundle.putParcelable("car", car)
 
         val detailCarFragment = DetailCarFragment()
         detailCarFragment.arguments = bundle
 
-        supportFragmentManager.beginTransaction().add(R.id.fragment_container_view, detailCarFragment).commit()
+        supportFragmentManager.beginTransaction()
+            .add(R.id.fragment_container_view, detailCarFragment).commit()
     }
 }

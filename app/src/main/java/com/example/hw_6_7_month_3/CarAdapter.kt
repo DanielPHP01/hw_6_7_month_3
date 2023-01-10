@@ -16,7 +16,6 @@ class CarAdapter(
     val onClick: (Car) -> Unit
 ) : RecyclerView.Adapter<CarAdapter.CarViewHolder>() {
 
-
     inner class CarViewHolder(var binding: ItemCarBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
@@ -25,8 +24,6 @@ class CarAdapter(
             binding.textName.text = car.name
             binding.textYear.text = car.year.toString()
             binding.textPrice.text = car.price.toString()
-
-
         }
     }
 
@@ -40,10 +37,9 @@ class CarAdapter(
         )
     }
 
-
     override fun onBindViewHolder(holder: CarViewHolder, position: Int) {
         holder.onBind(array[(holder.adapterPosition)])
-        holder.itemView.setOnClickListener{onClick(array[position])}
+        holder.itemView.setOnClickListener { onClick(array[position]) }
     }
 
     override fun getItemCount(): Int {

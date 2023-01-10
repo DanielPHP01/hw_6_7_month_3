@@ -17,8 +17,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         loadData()
         setAdapter()
-
-
     }
 
     private fun setAdapter() {
@@ -50,9 +48,5 @@ class MainActivity : AppCompatActivity() {
         arrayList?.add(Car(name = "BMW", year = 2022, photo = "", isHave = true, price = 200000))
         arrayList?.add(Car(name = "BMW", year = 2022, photo = "", isHave = true, price = 200000))
         arrayList?.add(Car(name = "BMW", year = 2022, photo = "", isHave = true, price = 200000))
-
-
     }
-
-
 }

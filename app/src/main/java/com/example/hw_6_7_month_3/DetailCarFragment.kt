@@ -14,8 +14,7 @@ class DetailCarFragment : Fragment() {
     private lateinit var binding: FragmentDetailCarBinding
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         binding = FragmentDetailCarBinding.inflate(layoutInflater)
         return binding.root

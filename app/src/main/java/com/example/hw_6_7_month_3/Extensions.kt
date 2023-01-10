@@ -5,6 +5,7 @@ import com.bumptech.glide.Glide
 
 object Extensions {
 
-    fun ImageView.loadImage(photoUri: String){
+    fun ImageView.loadImage(photoUri: String) {
         Glide.with(this).load((photoUri)).into(this)
-    }}
+    }
+}
